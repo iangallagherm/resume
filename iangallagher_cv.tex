@@ -1,34 +1,119 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-\documentclass[letterpaper, 11pt]{moderncv}
-
+\documentclass[a4paper, 11pt, sans]{moderncv}
 \moderncvtheme{classic}
 \moderncvcolor{blue}
-\nopagenumbers{}
 
-% Packages
-\usepackage[utf8]{inputenc}
-
-\usepackage{fontawesome}
-
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=.80]{geometry}
 \recomputelengths
 
+\usepackage{fontawesome}
+\usepackage{fontspec}
+
 %----------------------------------------------------------------------------------------
-%   Personal Data 
+%	CHANGE MODERNCV FONT
+%----------------------------------------------------------------------------------------
+\def\headingfont{Fira Sans}
+\setmainfont{\headingfont} 
+\renewcommand*\namefont{\fontspec{\headingfont}\fontsize{30}{48}\selectfont}
+\renewcommand*\titlefont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
+\renewcommand*\addressfont{\fontspec{\headingfont}\selectfont}
+\renewcommand*\sectionfont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
+
+%----------------------------------------------------------------------------------------
+%   PERSONAL INFO SYMBOLS
+%
+%   Refer to moderncv.cls source file on ctan for symbold command names
+%----------------------------------------------------------------------------------------
+\renewcommand{\fixedphonesymbol}{\faPhone}
+\renewcommand{\mobilephonesymbol}{\faPhone}
+\renewcommand{\emailsymbol}{\faEnvelope}
+\renewcommand{\addresssymbol}{\faHome}
+\renewcommand{\linkedinsocialsymbol}{\faLinkedinSquare}
+\renewcommand{\githubsocialsymbol}{\faGithub}
+
+
+\nopagenumbers{}
+
+%----------------------------------------------------------------------------------------
+%   PERSONAL INFO
 %----------------------------------------------------------------------------------------
 \firstname{Ian}
 \familyname{Gallagher}
 %\title{Resum\'e}
-\address{Felton, California}
-\mobile{(831)818-9080}
-\email{iangallagherm@gmail.com}
-\extrainfo{github.com/iangallagherm}
-\photo[64pt]{mepicture}
-%\quote{}
+\address{~Felton, California}
+\phone[mobile]{~(831)~818-9080}
+\email{~iangallagherm@gmail.com}
+\social[linkedin]{~ianmichaelgallagher}
+\social[github]{~iangallagherm}
+\photo[64pt][2pt]{mepicture}
 
 
 \begin{document}
-    \maketitle
+
+\makecvtitle
+
+\section{Education}
+\cventry{2017--2021}
+        {B.S. Mathematics; Minor: Computer Science}
+        {Cal Poly}
+        {San Luis Obispo}
+        {\textit{3.93 GPA}}
+        {
+            Graduating June 2021.\newline
+            Attended graduate courses in Field Theory, Point Set Topology, Algebra, and Real Analysis. \newline
+        }
+
+\section{Experience}
+
+\cventry{2019--Present}
+        {Software Team Member}
+        {Cal Poly CubeSat Laboratory}{}{}
+        {
+            Software Lead for NASA ER-2 payload designed to record plane's in-flight vibrational profile and interface with custom XCube CPCL payload carrier.\newline
+            Refactored and updated existing microcontroller analog to digital converter sampling pipeline.
+            Designed for embedded Linux platforms. Languages Used: C, Python.\newline
+        }
+
+\cventry{Summer 2020}
+        {Frost Research Scholar}
+        {Cal Poly Mathematics Department}{}{}
+        {
+            Member of pure mathematics student research team lead by Dr. Eric Brussel.\newline
+            Generalized results about the structure of the quaternions to a class of objects known as the generalized quaternions.\newline
+            Classified the embedded commutative sub-algebras, their conjugacy classes, and created associated moduli spaces.\newline 
+        }
+
+\cventry{Summer 2019}
+        {Frost Research Scholar}
+        {Cal Poly Mathematics Department}{}{}
+        {
+            Implemented theoretical climate models from research papers in Matlab.\newline
+            Utilized shell scripts to parallelize runs of model over a wide array of input parameters.\newline
+            Created visuals and statistical tests to investigate link between internal model behavior and external forcing signals.\newline 
+        }
+
+%\cventry{year--year}
+%        {Job title}
+%        {Employer}
+%        {City}{}
+%        {General description no longer than 1--2 lines.\newline}
+
+\section{Technical Skills}
+
+\cvitem{Languages}{C, Python, Java, Matlab}
+\cvitem{Tools}{Linux, Bash, Git, Valgrind, GDB, \LaTeX}
+
+\section{Awards}
+\cventry{2020}
+        {Outstanding Junior of the Year}
+        {Cal Poly Mathematics Department}{}{}
+        {Awarded to a single junior in the math major for demonstrating superior leadership skills and the ability to work effectively with peers and faculty.\newline}
+
+\cventry{2019, 2020}
+        {Edward Van Duyne Memorial Scholarship}
+        {Cal Poly Mathematics Department}{}{}
+        {Two time recipient of scholarship intended for high-achieving students in the mathematics major.\newline}
+
 \end{document}
