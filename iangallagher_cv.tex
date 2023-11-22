@@ -5,7 +5,7 @@
 \moderncvtheme{classic}
 \moderncvcolor{blue}
 
-\usepackage[scale=.80]{geometry}
+\usepackage[scale=.90]{geometry}
 \recomputelengths
 
 \usepackage{fontawesome}
@@ -20,6 +20,7 @@
 \renewcommand*\titlefont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
 \renewcommand*\addressfont{\fontspec{\headingfont}\selectfont}
 \renewcommand*\sectionfont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
+\setlength{\hintscolumnwidth}{0.175\textwidth}
 
 %----------------------------------------------------------------------------------------
 %   PERSONAL INFO SYMBOLS
@@ -41,7 +42,7 @@
 %----------------------------------------------------------------------------------------
 \firstname{Ian}
 \familyname{Gallagher}
-\title{Curriculum Vitae}
+\title{Resume}
 %\address{~Felton, California}
 \phone[mobile]{~(831)~818-9080}
 \email{~iangallagherm@gmail.com}
@@ -54,19 +55,40 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2017--2021}
-        {B.S. Mathematics}
+\cventry{Sep 2017--Jun 2021}
+        {Bachelor of Science, Mathematics}
         {Cal Poly}
         {San Luis Obispo}
         {\textit{3.9 GPA}}
         {
-            Graduated Summa Cum Laude\newline
-            Minor in Computer Science\newline
+            Graduated Summa Cum Laude with a Computer Science Minor.\newline
+            President's List (2018, 2019, 2020). Dean's List (9 Quarters).
         }
+
+\section{Honors}
+% \cventry{2021--2024}
+%         {Solutions Architect -- Associate}
+%         {Amazon Web Services}{}{}
+%         {Demonstrated the ability to build secure and robust solutions using architectural design principles.\newline}
+
+\cventry{Jun 2021}
+        {Robert P. Balles Most Outstanding Senior}
+        {Mathematics Department}{Cal Poly}{}
+        {One of two students selected on the basis of participation in clubs or societies, contribution to the image of the department, and scholastic achievement.\newline}
+
+\cventry{Jun 2020}
+        {Accenture Outstanding Junior of the Year}
+        {Mathematics Department}{Cal Poly}{}
+        {Awarded to a single junior in the mathematics major for demonstrating superior leadership skills and the ability to work effectively with peers and faculty.\newline}
+
+\cventry{Jun 2019, Jun 2020}
+        {Edward Van Duyne Memorial Scholarship}
+        {Mathematics Department}{Cal Poly}{}
+        {Two time recipient of scholarship intended for high-achieving students in the mathematics major.}
 
 \section{Experience}
 
-\cventry{July 2021-- May 2023}
+\cventry{Jul 2021--May 2023}
         {Software Engineer}
         {Pariveda Solutions}
         {San Francisco}{}
@@ -76,34 +98,52 @@
             Made optimizations to reduce request latency by 20\% and request volume by more than 50\% for core customer support data.
         }
 
-\cventry{2019--2021}
+\cventry{Sep 2019--Jun 2021}
         {Software Team Member}
-        {Cal Poly CubeSat Laboratory}{}{}
+        {CubeSat Laboratory}{Cal Poly}{}
         {
             Software lead for NASA ER-2 custom cubesat payload carrier, as well as a payload designed to record the in-flight vibrational profile of launches.
             Made extensive changes to the carrier's flight computer's event loop architecture, and troubleshooted interface problems with external electrical components.
             Updated an existing microcontroller's analog to digital converter sampling pipeline to interface with the carrier.
         }
 
-\cventry{Sprint 2021}
+\cventry{Jan 2021--Jun 2021}
         {Senior Project}
-        {Cal Poly Mathematics Department}{}{}
+        {Mathematics Department}{Cal Poly}{}
         {
             Worked with Dr. Eric Brussel answering followup questions from our prior summer research project.
             Theorized and then proved results about the maximal commutative subalgebras of two by two matrices over a finite field.
             Fully determined the conjugacy classes of the subalgebras and gave formulas for the count of each type of subalgebra for a given finite field.
         }
 
-\cventry{Summer 2020}
+\cventry{Jun 2020--Sep 2020}
         {Frost Research Scholar}
-        {Cal Poly Mathematics Department}{}{}
+        {Mathematics Department}{Cal Poly}{}
         {
             Member of pure mathematics student research team lead by Dr. Eric Brussel.
             Studied results about the structure of the moduli space of embedded complex planes within the quaternions.
             We extended these results to categorize the embedded commutative sub-algebras of generalized quaternions over the real numbers, determining their conjugacy classes and a representation of the moduli spaces.
         }
 
-\cventry{Summer 2019}
+\cventry{Apr 2020--Dec 2020}
+        {Campus Tutor}
+        {Learning Support Center}{Cal Poly}{}
+        {
+            Provided one on one tutoring for students enrolled in lower division math and computer science courses.
+            Put an emphasis on guiding questions and problem solving approaches to lead students towards solutions.
+            Would work with students to review any gaps they had with the course material.
+        }
+
+\cventry{Sep 2019--Mar 2020}
+        {Course Grader}
+        {Cal Poly Mathematics Department}{}{}
+        {
+            Grader for two sections of MATH 143 (Calculus III).
+            Course content included: infinite sequences and series, power series and taylor series, vector algebra, parametric curves.
+            Evaluated students work for completion and correctness, including marks for incorrect steps in a solution.
+        }
+
+\cventry{Jun 2019--Sep 2019}
         {Frost Research Scholar}
         {Cal Poly Mathematics Department}{}{}
         {
@@ -118,32 +158,12 @@
 %        {City}{}
 %        {General description no longer than 1--2 lines.\newline}
 
-\newpage
+% \newpage
 % \section{Technical Skills}
 % 
 % \cvitem{Languages}{Java, Kotlin, Ruby, Python, C, Matlab, JavaScript, TypeScript}
 % \cvitem{Frameworks}{React, GraphQL, REST}
 % \cvitem{Tools}{Linux, Bash, Git, Docker, Kubernetes, Buildkite, Datadog, \LaTeX}
 
-\section{Honors}
-% \cventry{2021--2024}
-%         {Solutions Architect -- Associate}
-%         {Amazon Web Services}{}{}
-%         {Demonstrated the ability to build secure and robust solutions using architectural design principles.\newline}
-
-\cventry{2021}
-        {Robert P. Balles Most Outstanding Senior}
-        {Cal Poly Mathematics Department}{}{}
-        {One of two students selected on the basis of participation in clubs or societies, contribution to the image of the department, and scholastic achievement.\newline}
-
-\cventry{2020}
-        {Accenture Outstanding Junior of the Year}
-        {Cal Poly Mathematics Department}{}{}
-        {Awarded to a single junior in the mathematics major for demonstrating superior leadership skills and the ability to work effectively with peers and faculty.\newline}
-
-\cventry{2019, 2020}
-        {Edward Van Duyne Memorial Scholarship}
-        {Cal Poly Mathematics Department}{}{}
-        {Two time recipient of scholarship intended for high-achieving students in the mathematics major.\newline}
 
 \end{document}
