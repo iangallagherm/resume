@@ -8,30 +8,29 @@
 \usepackage[scale=.80]{geometry}
 \recomputelengths
 
-\usepackage{fontawesome}
 \usepackage{fontspec}
 
 %----------------------------------------------------------------------------------------
 %	CHANGE MODERNCV FONT
 %----------------------------------------------------------------------------------------
-\def\headingfont{Fira Sans}
-\setmainfont{\headingfont} 
-\renewcommand*\namefont{\fontspec{\headingfont}\fontsize{30}{48}\selectfont}
-\renewcommand*\titlefont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
-\renewcommand*\addressfont{\fontspec{\headingfont}\selectfont}
-\renewcommand*\sectionfont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
+%\def\headingfont{Fira Sans}
+%\setmainfont{\headingfont} 
+%\renewcommand*\namefont{\fontspec{\headingfont}\fontsize{30}{48}\selectfont}
+%\renewcommand*\titlefont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
+%\renewcommand*\addressfont{\fontspec{\headingfont}\selectfont}
+%\renewcommand*\sectionfont{\fontspec{\headingfont}\fontsize{20}{24}\selectfont}
 
 %----------------------------------------------------------------------------------------
 %   PERSONAL INFO SYMBOLS
 %
 %   Refer to moderncv.cls source file on ctan for symbold command names
 %----------------------------------------------------------------------------------------
-\renewcommand{\fixedphonesymbol}{\faPhone}
-\renewcommand{\mobilephonesymbol}{\faPhone}
-\renewcommand{\emailsymbol}{\faEnvelope}
-\renewcommand{\addresssymbol}{\faHome}
-\renewcommand{\linkedinsocialsymbol}{\faLinkedinSquare~}
-\renewcommand{\githubsocialsymbol}{\faGithub~}
+%\renewcommand{\fixedphonesymbol}{\faPhone}
+%\renewcommand{\mobilephonesymbol}{\faPhone}
+%\renewcommand{\emailsymbol}{\faEnvelope}
+%\renewcommand{\addresssymbol}{\faHome}
+%\renewcommand{\linkedinsocialsymbol}{\faLinkedinSquare~}
+%\renewcommand{\githubsocialsymbol}{\faGithub~}
 
 
 \nopagenumbers{}
@@ -49,14 +48,24 @@
 \social[github]{iangallagherm}
 \photo[86pt][2pt]{mepicture}
 
-
 \begin{document}
 \makecvtitle
 
 \section{Education}
+\cventry{2024--Current}
+        {PhD Mathematics}
+        {University of California}
+        {Davis, CA}
+        {\textit{4.0 GPA}}
+        {
+            Currently enrolled in the PhD program in Mathematics at UC Davis.\newline
+            Research interests include numerical analysis, PDEs, dynamical
+            systems, and scientific computing.\newline
+        }
+
 \cventry{2017--2021}
-        {B.S. Mathematics}
-        {Cal Poly}
+        {BS Mathematics}
+        {California Polytechnic State University}
         {San Luis Obispo}
         {\textit{3.9 GPA}}
         {
@@ -67,22 +76,49 @@
 
 \section{Experience}
 
-\cventry{July 2021-- May 2023}
+\cventry{Sep 2024--Current}
+        {Graduate Teaching Assistant}
+        {University of California, Davis}
+        {}{}
+        {
+          Teaching assistant for undergraduate calculus courses offered by the
+          Department of Mathematics.\newline
+          Responsibilities include teaching discussion sections, grading, and
+          group calculus tutoring.\newline
+        }
+
+\cventry{Nov 2023-- Apr 2024}
+        {Freeride Ski Coach}
+        {Palisades Tahoe}
+        {}{}
+        {
+          Coached a group of 10-13 year old athletes in the Freeride program at
+          Palisades Tahoe.\newline
+        }
+
+\cventry{Jul 2021-- May 2023}
         {Software Engineering Consultant}
         {Pariveda Solutions}
         {San Francisco}{}
         {
-            Built, tested, and deployed new features for next generation customer support platform of a major online hospitality marketplace.\newline
-            Tasked with improvements to backend service infrastructure and increasing observability and alerting of systems.\newline
-            Made optimizations to reduce request latency by 20\% and request volume by more than 50\% for core customer support data.\newline
+            Built, tested, and deployed new features for next generation
+            customer support platform of a major online hospitality
+            marketplace.\newline
+            Tasked with improvements to backend service infrastructure and
+            increasing observability and alerting of systems.\newline
+            Made optimizations to reduce request latency by 20\% and request
+            volume by more than 50\% for core customer support data.\newline
         }
 
 \cventry{2019--2021}
         {Software Team Member}
         {Cal Poly CubeSat Laboratory}{}{}
         {
-            Software Lead for NASA ER-2 payload designed to record plane's in-flight vibrational profile and interface with custom XCube CPCL payload carrier.\newline
-            Refactored and updated existing microcontroller analog to digital converter sampling pipeline.
+            Software Lead for NASA ER-2 payload designed to record plane's
+            in-flight vibrational profile and interface with custom XCube CPCL
+            payload carrier.\newline
+            Refactored and updated existing microcontroller analog to digital
+            converter sampling pipeline.
             Designed for embedded Linux platforms. Languages Used: C, Python.\newline
         }
 
@@ -90,9 +126,12 @@
         {Frost Research Scholar}
         {Cal Poly Mathematics Department}{}{}
         {
-            Member of pure mathematics student research team lead by Dr. Eric Brussel.\newline
-            Generalized results about the structure of the quaternions to a generalization of the quaternions.\newline
-            Classified the embedded commutative sub-algebras, their conjugacy classes, and associated moduli spaces.\newline 
+            Member of pure mathematics student research team lead by Dr. Eric
+            Brussel.\newline
+            Generalized results about the structure of the quaternions to a
+            generalization of the quaternions.\newline
+            Classified the embedded commutative sub-algebras, their conjugacy
+            classes, and associated moduli spaces.\newline 
         }
 
 \cventry{Summer 2019}
@@ -100,8 +139,10 @@
         {Cal Poly Mathematics Department}{}{}
         {
             Implemented theoretical climate models from research papers in Matlab.\newline
-            Utilized shell scripts to parallelize runs of model over a wide array of input parameters.\newline
-            Created visuals and statistical tests to investigate link between internal model behavior and external forcing signals.\newline 
+            Utilized shell scripts to parallelize runs of model over a wide
+            array of input parameters.\newline
+            Created visuals and statistical tests to investigate link between
+            internal model behavior and external forcing signals.\newline 
         }
 
 %\cventry{year--year}
@@ -110,7 +151,6 @@
 %        {City}{}
 %        {General description no longer than 1--2 lines.\newline}
 
-\newpage
 \section{Technical Skills}
 
 \cvitem{Languages}{Java, Kotlin, Ruby, Python, C, Matlab, JavaScript, TypeScript}
